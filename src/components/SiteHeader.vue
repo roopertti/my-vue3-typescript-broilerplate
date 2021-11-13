@@ -3,5 +3,7 @@ defineProps<{ msg: string }>()
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <header class="my-8">
+    <h1 class="text-center">{{ msg }}</h1>
+  </header>
 </template>

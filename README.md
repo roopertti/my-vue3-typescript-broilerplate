@@ -21,6 +21,7 @@ This is a basic Vue 3 boilerplate with following tooling:
 
 ## Development
 
-1. Run `yarn` to install dependencies.
-2. Run `yarn dev` to run the development server.
-3. All set up for development!
+1. Copy `.env.example` to `.env`.
+2. Run `yarn` to install dependencies.
+3. Run `yarn dev` to run the development server.
+4. All set up for development!
