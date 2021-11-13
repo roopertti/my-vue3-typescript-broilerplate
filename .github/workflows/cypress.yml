@@ -1,4 +1,4 @@
-name: Chrome Docker
+name: Cypress
 
 on:
   push:
@@ -20,6 +20,8 @@ jobs:
           node-version: '14'
       - name: Install dependencies
         run: yarn --frozen-lockfile
+      - name: Run dev server
+        run: yarn dev
       - name: Run cypress tests
         uses: cypress-io/github-action@v2
         timeout-minutes: 10
