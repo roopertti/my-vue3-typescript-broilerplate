@@ -8,7 +8,7 @@ defineProps<Props>()
 </script>
 
 <template>
-  <div class="bg-gray-200 rounded-lg p-4">
+  <div data-testid="postitem" class="bg-gray-200 rounded-lg p-4">
     <h3 class="mb-4">{{ title }}</h3>
     <p>{{ body }}</p>
   </div>

@@ -16,7 +16,7 @@ const { isLoading, isError, error, data } = useQuery(
   <div class="p-8 max-w-5xl m-auto">
     <h2 class="text-center mb-4">Posts</h2>
 
-    <p v-if="isLoading">Loading posts...</p>
+    <p data-testid="postlist-loading-text" v-if="isLoading">Loading posts...</p>
 
     <p v-if="isError">{{ error }}</p>
 
