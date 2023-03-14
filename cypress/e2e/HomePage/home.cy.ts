@@ -4,9 +4,7 @@ describe('Home page tests', () => {
     cy.get('h1').should('have.text', 'Vue 3 broilerplate')
     cy.get('h2').should('have.text', 'Posts')
     cy.get('[data-testid="postlist-loading-text"]').should('be.visible')
-  })
-
-  it('checks that homepage displays posts', () => {
+    cy.wait(200)
     cy.get('[data-testid="postitem"]').should('have.length', 10)
   })
 })
