@@ -13,8 +13,9 @@ import ExternalLink from '../components/ExternalLink.vue'
       <p>
         Check out
         <ExternalLink
-          :href="'https://github.com/roopertti/my-vue3-typescript-broilerplate'"
-          :text="'Github repository'"
+          id="github-link"
+          href="https://github.com/roopertti/my-vue3-typescript-broilerplate"
+          text="Github repository"
         />
         for more details.
       </p>
