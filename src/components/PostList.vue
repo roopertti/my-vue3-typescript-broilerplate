@@ -13,21 +13,17 @@ const { isLoading, isError, error, data } = useQuery(
 </script>
 
 <template>
-  <div class="p-8 max-w-5xl m-auto">
-    <h2 class="text-center mb-4">Posts</h2>
+  <p data-testid="postlist-loading-text" v-if="isLoading">Loading posts...</p>
 
-    <p data-testid="postlist-loading-text" v-if="isLoading">Loading posts...</p>
+  <p v-if="isError">{{ error }}</p>
 
-    <p v-if="isError">{{ error }}</p>
-
-    <ResponsiveGrid v-if="!isLoading && !isError">
-      <PostItem
-        v-for="post in data"
-        :key="post.id"
-        :title="post.title"
-        :body="post.body"
-        >{{ post.title }}</PostItem
-      >
-    </ResponsiveGrid>
-  </div>
+  <ResponsiveGrid v-if="!isLoading && !isError">
+    <PostItem
+      v-for="post in data"
+      :key="post.id"
+      :title="post.title"
+      :body="post.body"
+      >{{ post.title }}</PostItem
+    >
+  </ResponsiveGrid>
 </template>

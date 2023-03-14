@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import { useQueryProvider } from 'vue-query'
 import { VueQueryDevTools } from 'vue-query/devtools'
+import { RouterView } from 'vue-router';
 
-import SiteHeader from './components/SiteHeader.vue'
-import PostList from './components/PostList.vue'
+import PageHeader from './components/PageHeader.vue';
 useQueryProvider()
 </script>
 
 <template>
-  <SiteHeader msg="Vue 3 broilerplate" />
-  <PostList :user-id="1" />
+  <PageHeader title="Vue 3 broilerplate" />
+  <RouterView />
   <VueQueryDevTools />
 </template>
