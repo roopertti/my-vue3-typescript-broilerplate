@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Stack from './Stack.vue';
+
 type Props = {
   title: string
   body: string
@@ -9,7 +11,11 @@ defineProps<Props>()
 
 <template>
   <div data-testid="postitem" class="bg-gray-200 rounded-lg p-4">
-    <h3 class="mb-4">{{ title }}</h3>
-    <p>{{ body }}</p>
+    <Stack gap="md">
+      <template #content>
+        <h3>{{ title }}</h3>
+        <p>{{ body }}</p>
+      </template>
+    </Stack>
   </div>
 </template>

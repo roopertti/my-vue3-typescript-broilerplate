@@ -5,6 +5,8 @@ defineProps<{ title: string }>()
 <template>
   <div class="text-center">
     <h2 class="mb-8">{{ title }}</h2>
-    <slot name="content"></slot>
+    <main>
+      <slot name="content"></slot>
+    </main>
   </div>
 </template>
