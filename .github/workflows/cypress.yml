@@ -10,7 +10,7 @@ jobs:
   chrome:
     runs-on: ubuntu-latest
     env:
-      VITE_API_HOST: https://jsonplaceholder.typicode.com/
+      VITE_API_HOST: https://jsonplaceholder.cypress.io/
     steps:
       - name: Checkout
         uses: actions/checkout@v2

@@ -20,8 +20,8 @@ describe('Navbar tests', () => {
   it('renders Navbar', async () => {
     const wrapper = mount(NavBar, {
       global: {
-        plugins: [router]
-      }
+        plugins: [router],
+      },
     })
     expect(wrapper.find('nav')).toBeTruthy()
   })
@@ -29,8 +29,8 @@ describe('Navbar tests', () => {
   it('checks navbar links', async () => {
     const wrapper = mount(NavBar, {
       global: {
-        plugins: [router]
-      }
+        plugins: [router],
+      },
     })
 
     const links = wrapper.findAll('a')

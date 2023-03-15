@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils'
 import { describe, it, expect } from 'vitest'
 
-import Stack from '../Stack.vue'
+import Stack from '../StackUtil.vue'
 
 describe('Stack tests', () => {
   const testContent = '<p>Test content</p><p>Test content 2</p>'

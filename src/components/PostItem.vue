@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Stack from './Stack.vue';
+import Stack from './StackUtil.vue'
 
 type Props = {
   title: string

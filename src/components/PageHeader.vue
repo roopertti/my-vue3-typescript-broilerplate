@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import NavBar from './NavBar.vue';
+import NavBar from './NavBar.vue'
 
 defineProps<{ title: string }>()
 </script>

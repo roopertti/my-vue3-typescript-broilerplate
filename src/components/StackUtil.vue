@@ -2,7 +2,7 @@
 type Gap = 'sm' | 'md' | 'lg'
 
 withDefaults(defineProps<{ gap: Gap }>(), {
-  gap: 'sm'
+  gap: 'sm',
 })
 </script>
 
@@ -13,7 +13,7 @@ withDefaults(defineProps<{ gap: Gap }>(), {
   <div v-else-if="gap === 'md'" class="flex flex-col gap-4">
     <slot name="content"></slot>
   </div>
-  <div v-else="gap === 'sm'" class="flex flex-col gap-2">
+  <div v-else class="flex flex-col gap-2">
     <slot name="content"></slot>
   </div>
 </template>
