@@ -13,7 +13,7 @@
     "lint": "eslint --ext .ts,.vue --ignore-path .gitignore --fix src",
     "format": "prettier . --write",
     "cypress:open": "cypress open",
-    "test": "vitest",
+    "test": "vitest run",
     "coverage": "vitest run --coverage",
     "prepare": "husky install"
   },
