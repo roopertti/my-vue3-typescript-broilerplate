@@ -7,21 +7,15 @@ on:
     branches: [main]
 
 jobs:
-  chrome:
+  cypress-run:
     runs-on: ubuntu-latest
     env:
       VITE_API_HOST: https://jsonplaceholder.cypress.io/
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-      - name: Install node
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-      - name: Install dependencies
-        run: yarn --frozen-lockfile
+        uses: actions/checkout@v3
       - name: Run cypress tests
-        uses: cypress-io/github-action@v2
-        timeout-minutes: 10
+        uses: cypress-io/github-action@v5.3.0
         with:
-          start: yarn dev
+          build: yarn build
+          start: yarn serve
