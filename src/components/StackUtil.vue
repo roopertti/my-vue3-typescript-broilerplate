@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 type Gap = 'sm' | 'md' | 'lg'
 
-withDefaults(defineProps<{ gap: Gap }>(), {
+withDefaults(defineProps<{ gap?: Gap }>(), {
   gap: 'sm',
 })
 </script>
