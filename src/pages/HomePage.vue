@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import CounterButton from '../components/CounterButton.vue'
-import PageLayout from '../components/PageLayout.vue'
-import PostList from '../components/PostList.vue'
-import StackUtil from '../components/StackUtil.vue'
+import CounterButton from '@/components/CounterButton.vue'
+import PageLayout from '@/components/PageLayout.vue'
+import PostList from '@/components/PostList.vue'
+import StackUtil from '@/components/StackUtil.vue'
 </script>
 <template>
   <PageLayout title="Posts">

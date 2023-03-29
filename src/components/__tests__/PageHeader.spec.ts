@@ -2,7 +2,7 @@ import { mount } from '@vue/test-utils'
 import { describe, it, expect } from 'vitest'
 import { createRouter, createWebHistory } from 'vue-router'
 
-import { routes } from '../../router'
+import { routes } from '@/router'
 import PageHeader from '../PageHeader.vue'
 
 describe('PageHeader tests', () => {

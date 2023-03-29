@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import PageLayout from '../components/PageLayout.vue'
-import ExternalLink from '../components/ExternalLink.vue'
+import PageLayout from '@/components/PageLayout.vue'
+import ExternalLink from '@/components/ExternalLink.vue'
 </script>
 
 <template>

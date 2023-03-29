@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Stack from './StackUtil.vue'
+import StackUtil from './StackUtil.vue'
 
 type Props = {
   title: string
@@ -11,11 +11,11 @@ defineProps<Props>()
 
 <template>
   <div data-testid="postitem" class="bg-gray-200 rounded-lg p-4">
-    <Stack gap="md">
+    <StackUtil gap="md">
       <template #content>
         <h3>{{ title }}</h3>
         <p>{{ body }}</p>
       </template>
-    </Stack>
+    </StackUtil>
   </div>
 </template>

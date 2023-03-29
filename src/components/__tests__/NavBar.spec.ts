@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach } from 'vitest'
 import { mount } from '@vue/test-utils'
 import NavBar from '../NavBar.vue'
 
-import { routes } from '../../router'
+import { routes } from '@/router'
 import { createRouter, createWebHistory, Router } from 'vue-router'
 
 describe('Navbar tests', () => {

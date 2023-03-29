@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useQuery } from '@tanstack/vue-query'
-import { getPostsByUser } from '../services/posts'
+import { getPostsByUser } from '@/services/posts'
 import ResponsiveGrid from './ResponsiveGrid.vue'
 import PostItem from './PostItem.vue'
 
